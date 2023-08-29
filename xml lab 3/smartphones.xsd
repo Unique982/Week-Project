@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="smartphones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="smartphone" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="brand" type="xs:string"/>
+                            <xs:element name="price" type="xs:integer"/>
+                            <xs:element name="country" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

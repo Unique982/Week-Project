@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<smartphones>
+<smartphone>
+<id>101</id>
+<model>Samsung Galaxy</model>
+<brand>Samsung</brand>
+<price>15000</price>
+<country>South Korea</country>
+</smartphone>
+<smartphone>
+<id>102</id>
+<model>iPhone 14</model>
+<brand>Apple</brand>
+<price>150000</price>
+<country>United States of America</country>
+</smartphone>
+<smartphone>
+<id>103</id>
+<model>Nokia 3300</model>
+<brand>Nokia</brand>
+<price>3500</price>
+<country>Finland</country>
+</smartphone>
+<smartphone>
+<id>104</id>
+<model>Oppo 15</model>
+<brand>Oppo</brand>
+<price>25000</price>
+<country>South Korea</country>
+</smartphone>
+</smartphones>
