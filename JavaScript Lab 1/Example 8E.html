@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create a web page having a digital clock blinking each second and displaying correct
+time. The page also should display the current date. -->
+    <h1 id="clock"></h1>
+    <h1 id="date"></h1>
+    <script>
+       let displayClock = function(){
+                let today = new Date();
+                let hh = today.getHours();
+                let mm= today.getMinutes();
+                let ss = today.getSeconds();
+                
+                document.getElementById('clock').innerHTML=hh+":"+mm+":"+ss+":";
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let month = months[today.getMonth()];
+            let year = today.getFullYear();
+            let date = today.getDate();
+
+            document.getElementById('date').innerHTML = month + " " + date + ", " + year;
+        }
+            window.setInterval(displayClock);
+
+    
+    </script>
+    <p> <b>Lab :1 Q.N 8E.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>

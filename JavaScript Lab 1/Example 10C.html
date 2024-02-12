@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 10C</title>
+</head>
+<body>
+    <!-- WAP to demonstrate following mouse event handling
+-> Click
+ -> Mouseover
+-> Mouseout
+-> Mousedown
+-> Mouseup
+-> Mousemove -->
+    <style>
+        div#one{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        div#two{
+        width: 80px;
+        height: 60px;
+        background-color: greenyellow;
+        }
+    </style>
+    <h1>Mouse Event
+    </h1>
+    <div id="one">
+        <div id="two"></div>
+    </div>
+    <p> <b>Lab :1 Q.N 10C.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    <script>
+        function div1(e){
+            console.log(e.type);
+        }
+        function div2(e){
+            console.log(e.type);
+        }
+        var divOne = document.getElementById("one");
+        var divTwo = document.getElementById("two");
+        divTwo.addEventListener("mousedown", div1, false);
+        divTwo.addEventListener("mouseout", div2, false);
+        divOne.addEventListener("mouseup", div1, false);
+        divOne.addEventListener("mousemove", div1, false);
+        divOne.addEventListener("mouseover", div1, false);
+   </script>
+</body>
+</html>

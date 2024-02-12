@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 4A</title>
+</head>
+<body>
+    <!-- Write a program to demonstrate various ways to create an array in JS. -->
+    <script>
+// Method 1: Using Array literal syntax
+let a = [1, 2, 3, 4];
+
+// Method 2: Using the Array constructor
+let b = new Array(6, 7, 8, 9);
+
+// Method 3: pushing lements
+let c = [];
+c.push(10,11, 12, 13);
+
+// Method 4: Using Array.from() 
+let d = Array.from({ length: 5 }, (_, index) => index + 10);
+
+// Method 5: Using Array.of() method
+let e = Array.of(16, 17, 18, 19);
+
+console.log("Array created literal:", a);
+console.log("Array created  Array letructor:", b);
+console.log( "Array created by adding elements to an empty array:", c);
+console.log("Array created  Array.from() method:", d);
+console.log("Array created Array.of() method:", e);
+    </script>
+       <p> <b>Lab :1 Q.N 4 A.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+</body>
+</html>

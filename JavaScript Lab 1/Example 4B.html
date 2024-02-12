@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 4b</title>
+</head>
+<body>
+    <!-- Write a program to demonstrate two-dimensional and three-dimensional array
+creation and accessing elements from those arrays -->
+
+<script>
+     //2d array
+     document.write("2d Array...")
+     document.write("<br>");
+    
+let a= new Array(2);
+for (let i = 0; i < a.length; i++) {
+    a[i] = [];
+}
+let w = 0;
+let y = "Whatisdefien";
+ 
+// Loop to initialize 2D array elements.
+for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+ 
+        a[i][j] = y[w++];
+    }
+}
+console.log(a);
+document.write(a);
+document.write("<br>");
+//3d array
+document.write("3d Array...")
+document.write("<br>");
+
+let b=[["whatisarray"]]
+for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+        for(let k=0; k<2; k++){
+        document.write(b[i][j][k]);
+        }
+    }
+    
+}
+     
+</script>
+<p> <b>Lab :1 Q.N 4B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <!-- Write a program to demonstrate JS object creation using Object.create() function. -->
+    <script>
+        let personPrototypeObject = {
+          new: function () {
+            document.write(`Hello, ${this.name}!`+"<br>");
+          },
+        };
+  
+        let x= Object.create(personPrototypeObject);
+  
+        x.name = "Unique Neupane";
+      x.age = 20;
+  
+        document.write(`Name: ${x.name}`+"<br>");
+        document.write(`Age: ${x.age}`+"<br>");
+        x.new();
+      </script>
+      <p> <b>Lab :1 Q.N 6B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>

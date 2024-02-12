@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 5C</title>
+</head>
+<body>
+    <!--Write a program to demonstrate following function invocation techniques in JS:
+   As functions
+   As methods
+   As constructors
+ Indirectly through their call() and apply() methods
+ Implicit function invocation
+  -->
+    <script>
+   
+   // Function Invocation
+      function greet(name) {
+        document.write("Hello, " + name + "!");
+      }
+      greet("Unique Neupane");
+
+      // Method Invocation
+      var person = {
+        name: "Unique",
+        greetMethod: function () {
+          document.write("<br>Everthing, " + this.name + "!");
+        },
+      };
+      person.greetMethod();
+
+      // Constructor Invocation
+      function Person(name) {
+        this.name = name;
+      }
+      var person = new Person("User:Unique Neupane");
+      document.write("<br>Constructor Invocation:", person.name);
+
+      // Indirect Invocation using call() method
+      function call(city) {
+        document.write("<br>I am " + this.name + " from " + city + ".");
+      }
+      var name = { name: "Unique Neupane" };
+      call.call(person, "Dang");
+
+      // Indirect Invocation using apply() method
+      function displaySkills(skill1, skill2) {
+        document.write(
+          "<br>"+this.name + " is skilled in " + skill1 + " and " + skill2 + "."
+        );
+      }
+      var developer = { name: "Unique" };
+      var skills = ["PHP", "HTML"];
+      displaySkills.apply(developer, skills);
+
+      // Implicit Function Invocation
+      var calculator = {
+        value: 0,
+        add: function (x) {
+          this.value += x;
+          return this;
+        },
+        multiply: function (x) {
+          this.value *= x;
+          return this;
+        },
+      };
+      var result = calculator.add(5).multiply(5).value;
+      document.write("<br>Implicit Function Invocation:", result);
+   
+
+    </script>
+    <p> <b>Lab :1 Q.N 5C.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    
+</body>
+</html>

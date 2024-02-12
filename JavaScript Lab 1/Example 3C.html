@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Use prompt dialogs to take numbers and a confirm dialogs to ask whether to take
+another number or not. Write a script that takes numbers from user until user want to
+enter another number and display the sum of the all entered numbers using do-while -
+loop. -->
+<script>
+     let s =0;
+    let b,a;
+    do {
+        a = parseInt(window.prompt("Enter a number"));
+        b = window.confirm("Do you want to enter another number");
+        console.log(b);
+        if (b) {
+            s = s + a;
+        }
+    } while (b);
+    console.log(b);
+    s = s + a;
+    document.write("Sum: " + s);
+</script>
+<p> <b>Lab :1 Q.N 3 C.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+</body>
+</html>

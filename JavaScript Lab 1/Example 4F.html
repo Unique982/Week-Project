@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <!-- Write a program to illustrate use of following array methods:
+-> includes()
+-> find()
+-> findIndex()
+-> indexOf()
+-> lastIndexOf()
+-> join()
+-> concat()
+-> pop()
+-> push()
+-> reverse()
+-> shift()
+-> unshift()
+-> slice()
+-> map()
+-> sort()
+-> every() -->
+    <ol type="1">
+        <li>index()</li>
+        <script>
+            //13. includes() function
+           var a= ["kala","ram","hari","siat","ram"];
+    document.write(a+ "<br>");
+    var b =a.includes("ram");
+    document.write("Output:"+b+ " <br>");
+        </script>
+
+<li>find()</li>
+<script>
+    // 15. find() function 
+    var ages = [10,15,20,30,40,50];
+   document.write(ages +"<br>");
+     
+   var b = ages.find(checkAdult);
+   document.write("Output:"+b +"<br>");
+    function checkAdult(age){
+        return age >= 18;
+    }
+</script>
+
+<li>findIndex()</li>
+<script>
+   
+       // 16. findIndex() function 
+       var ages = [5,7,10,15,30,40,50];
+   document.write(ages +"<br>");
+     
+   var b = ages.findIndex(checkAdult);
+   document.write("Output:"+b +"<br>");
+    function checkAdult(age){
+        return age >= 18;
+    }
+</script>
+
+
+<li>indexOf()</li>
+<script>
+   
+         // 11.index of () and lastindexOf() functions example
+         var a= ["kala","ram","hari","sita"];
+            document.write(a+"<br>");
+            var b= a.indexOf("sita");
+            document.write("Output:"+b+"<br>");
+</script>
+
+
+<li>lastIndexOf()</li>
+<script>
+      var a= ["kala","ram","hari","sita"];
+             document.write(a+"<br>");
+            var b= a.lastIndexOf("sita");
+            document.write("Output:"+b+"<br>");
+        
+</script>
+<li>join()</li>
+<script>
+    var a=["Unique","Neupane", "Khem", "Raj"];
+          
+            var c= a.join("+-=");
+            document.write("Output:"+c);
+
+      
+</script>
+<li>concat()</li>
+<script>
+     // 7. concat Array Example...
+     var a=["Unique","Neupane", "Khem", "Raj"];
+            var b = a.concat("Prabin", "Bishal");
+            document.write("Output:"+b);
+      
+</script>
+
+<li>pop()</li>
+<script>
+    // 3. Pop Array Example..(delete last value)
+         
+    var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.pop();
+        document.write("Output:"+a + "<br>");
+
+      
+</script>
+
+<li>push()</li>
+<script>
+   var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.push("Bishal", "Hello World");
+        document.write("Output:"+a + "<br>");
+      
+</script>
+
+<li>reverse()</li>
+<script>
+   
+    // 2. Reverse ArrayExample..(change the 1st index value to last index value )
+    var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.reverse();
+        document.write("Output:"+a + "<br>");
+</script>
+
+<li>shift()</li>
+<script>
+   
+        // 5.Shift Array Example..(Frist Value delete)
+        var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.shift();
+        document.write("Output: "+a + "<br>");
+
+   
+</script>
+
+<li>unshift()</li>
+<script>
+   
+        // 6.Unshift Array Example..(add  the 0index)
+        var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.unshift("Bishal", "Hello World");
+        document.write("Output:"+a + "<br>");
+
+   
+</script>
+
+<li>map()</li>
+<script>
+    var arr = [11,3,5,8,9];
+    var r= arr.map(test);
+    document.write(r);
+    function test(x){
+        
+        return x * 10;
+    }
+       
+
+   
+</script>
+
+<li>sort()</li>
+<script>
+   
+        //1.  Sort Array Example() (Alphabetic order)
+        var a= ["Unique","Neupane", "Khem", "Raj"];
+        a.sort();
+        document.write(a + "<br>");
+
+
+   
+</script>
+
+<li>every()</li>
+<script>
+   
+        // 14. Event()Function Example
+    var ages = [150,20,25,18];
+    document.write(ages + "<br>");
+    var b = ages.every(checkAdult);
+    document.write(b + "<br><br>");
+    function checkAdult(age){
+        return age>= 18;
+    }
+
+
+   
+</script>
+    </ol>
+    <p> <b>Lab :1 Q.N 4f.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>

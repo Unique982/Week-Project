@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 10F</title>
+</head>
+<body onload="window.alert('page successful loaded');">
+    <!-- WAP to demonstrate following window/document event handling
+-> Load
+-> Unload
+-> Resize -->
+    <div id="mydiv"></div>
+    <p> <b>Lab :1 Q.N 10F<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    <script>
+      document.write("the page is load successfully");
+       function show(){
+        document.getElementById("mydiv").textContent ="Hello world";
+       }
+       window.addEventListener("laod",show);
+    </script>
+    
+</body>
+</html>

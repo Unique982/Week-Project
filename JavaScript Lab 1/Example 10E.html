@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 10E</title>
+</head>
+<body>
+    <!-- WAP to demonstrate following form event handling
+-> Focus
+-> Submit
+-> Blur
+-> Change -->
+    Name: <input type="text" name="name" id="name"><br>
+    chose color: <input type="radio" name="color"  value="red">Red
+    <input type="radio" name="color"  value="green">Green
+    <input type="radio" name="color"  value="blue">Blue
+ 
+    <input type="radio" name="color" value="yellow">yellow <br>
+
+<form onsubmit="handleForm(event)" id="form">
+<input type="text" id="name" placeholder="Enter your name">
+<input type="email" id="email" placeholder="Enter your email">
+<input type="hidden" id="msg">
+
+<input type="submit" value="submit">
+</form>
+<p> <b>Lab :1 Q.N 10E<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+<script>
+    var txt = document.getElementById("name");
+    function focus(e){
+    txt.style.backgroundColor='blue';
+    }
+    function blur(e){
+        txt.style.backgroundColor='red';
+    }
+    txt.addEventListener("focus",focus);
+    txt.addEventListener("blur",blur);
+    function changeColor(e){
+            let selectedColor = e.target.value;
+            document.body.style.background = selectedColor;
+        }
+            let radioButtons = document.getElementsByName('color');
+            for(let i =0; i<radioButtons.length;i++){
+                 radioButtons[i].addEventListener('change',changeColor);
+               
+
+            }
+//  submit function code
+function handleFrom(e){
+    e.preventDefault();
+    document.getElementById("msg").value="From is submitted";
+    var name=document.getElementById('name').value;
+    var email=doument.getElementById('email').value;
+    console.log(name);
+    console.log(email);
+
+} </script>
+</body>
+</html>

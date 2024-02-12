@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 5A</title>
+</head>
+<body>
+    <!-- Write a program to illustrate how a function is created using
+function declaration statement and
+  function expression -->
+    <script>
+    var x=parseInt(window.prompt("Enter the frist number:"));
+    var y= parseInt(window.prompt("Enter the Second Number:"));
+    sum(x,y);
+    function sum(x,y){
+        var z=x+y;
+        document.write("Sum:" +z);
+    }
+
+    document.write("<br>");
+    console.log("Expression Function");
+   // fuunction expression
+    document.write("<br>");
+    var exp= function show(){
+        console.log("Output:-2Expression Function");
+    }
+    exp();
+
+    </script>
+       <p> <b>Lab :1 Q.N 5A.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 11B</title>
+</head>
+<body>
+  <!-- Write a program to demonstrate the use of open() and close() window methods for
+opening and closing the pop-up windows. (use two buttons for opening and closing) -->
+    <button id="open">Open</button>
+    <button id="close">Close</button>
+    <p> <b>Lab :1 Q.N 11B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+  var open=document.getElementById("open");
+  open.addEventListener("click",function(){
+    openwindow=window.open("https://unique982.github.io/uniquehotel.github.io/","_blank","width=300","height=300px");
+  });
+  var close=document.getElementById("close");
+  close.addEventListener("click",function(){
+    openwindow.close();
+  });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 10D</title>
+</head>
+<body>
+    <!-- WAP to demonstrate following keyboard event handling
+-> Keydown
+-> keyup -->
+    <h1>Key Event</h1>
+    Name:- <input type="text" id="mytext">
+    <p> <b>Lab :1 Q.N 10D<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    <script>
+        var txt = document.getElementById("mytext");
+        function ke(e){
+            console.log(e.type + ' ' + e.keyCode + ' ' + String.fromCharCode(e.keyCode));
+        }
+            txt.addEventListener("keydown", ke ,false);
+            txt.addEventListener("keyup", ke, false);
+        
+    </script>
+    
+</body>
+</html>

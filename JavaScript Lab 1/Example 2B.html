@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2B</title>
+</head>
+<body>
+    <!-- Create a web page that asks user to enter a number form prompt dialog and displays
+whether the number is single digit number, double digit number, triple digit number
+or multi digit number using if-else-if statements. -->
+   <script>
+    var x=window.prompt("Enter a Number:");
+    var y=Math.abs(x);
+    if(y<10){
+        document.write("Number is single digit");
+    }
+    else if(y>=10 &&y<99){
+        document.write("Number is double digit");
+
+    }
+    else if(y>=100 && y<999){
+   document.write("Number is tripple digits");
+    }
+    else{
+        document.write("Number is more than tripple digits");
+    }
+   </script>
+      <p> <b>Lab :1 Q.N 2 B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+    
+</body>
+</html>

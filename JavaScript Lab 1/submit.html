@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handleForm(event)" id="form">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="hidden" id="msg">
+    
+        <input type="submit" value="submit">
+    </form>
+    
+    <script>
+        function handleForm(e) {
+            e.preventDefault();
+            document.getElementById("msg").value = "Form is submitted";
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            console.log(name);
+            console.log(email);
+        }
+    </script>
+    
+</body>
+</html>

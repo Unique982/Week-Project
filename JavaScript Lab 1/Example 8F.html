@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 8F</title>
+</head>
+<body>
+    <!-- Write a program to display the date before after given
+-> Days
+-> Hours -->
+    <script>
+        function calculateDate() {
+            // Get the input values
+            const days = parseInt(document.getElementById('days').value) || 0;
+            const hours = parseInt(document.getElementById('hours').value) || 0;
+    
+            // Get the current date and time
+            const currentDate = new Date();
+    
+            // Calculate the new date
+            const newDate = new Date(currentDate.getTime() + days * 24 * 60 * 60 * 1000 + hours * 60 * 60 * 1000);
+    
+            // Display the results
+            document.getElementById('beforeDate').textContent = currentDate.toISOString();
+            document.getElementById('afterDate').textContent = newDate.toISOString();
+        }
+        
+    
+    </script>
+    
+    <h1>Date Calculation</h1>
+    <div class="input-box">
+        <label>Days:</label>
+        <input type="number" id="days" placeholder="Enter days">
+        
+    </div>
+    <div class="input-box">
+    <label for="hours">Hours:</label>
+    <input type="number" id="hours" placeholder="Enter hours">
+</div>
+    <button onclick="calculateDate()">Calculate</button>
+    
+    <p>Current Date and Time: <span id="beforeDate"></span></p>
+    <p>Date and Time After Calculation: <span id="afterDate"></span></p>
+    
+    <p> <b>Lab :1 Q.N 8F.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>

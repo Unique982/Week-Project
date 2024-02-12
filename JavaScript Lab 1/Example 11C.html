@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 11C</title>
+</head>
+<body>
+    <!-- WAP to illustrate the use of setTimeOut() and clearTimeOut() methods of window
+objects -->
+    <h1 id="outFunction">Hello World</h1>
+    <button id="clear">clear</button>
+    <p> <b>Lab :1 Q.N 11C.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+<script>
+  var timeoutID = setTimeout(()=>{
+        document.getElementById("outFunction").style='color:red';
+    }, 5000);
+   function clrtime(){
+    clearTimeout(timeoutID);
+   }
+   
+ document.getElementById("clear").addEventListener("click",clrtime)
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 8D</title>
+</head>
+<body>
+    <!-- Create a web page that takes date of birth as input and display the age
+  In years
+  In years, months and days -->
+    <script>
+        
+        var dob =   (window.prompt("Enter Your DOB in YYYY-MM-DD")); // Changed YY to YYYY for year clarity
+        var d = new Date(dob);
+        var today = new Date();
+        var dobYear = d.getFullYear();
+        var dobMonth = d.getMonth();
+        var dobDay = d.getDate();
+
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth();
+        var todayDay = today.getDate();
+
+        var ageInYears = todayYear - dobYear;
+        var ageInMonths = todayMonth - dobMonth;
+        var ageInDays = todayDay - dobDay;
+
+        if (ageInMonths < 0 || (ageInMonths === 0 && todayDay < dobDay)) {
+            ageInYears--;
+            ageInMonths += 12;
+        }
+
+        if (ageInDays < 0) {
+            var prevMonthDays = new Date(todayYear, todayMonth - 1, 0).getDate();
+            ageInDays += prevMonthDays;
+            ageInMonths--;
+        }
+
+        alert("You are " + ageInYears + " years, " + ageInMonths + " months, and " + ageInDays + " days old");
+    </script>
+    <p> <b>Lab :1 Q.N 8D.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>

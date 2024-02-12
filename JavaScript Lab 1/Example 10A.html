@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+<!-- WAP to demonstrate different ways of registering events in JS.(Hint: use click event
+for each technique) -->
+<button id="method1">Method 1 (Inline)</button>
+<button id="method2">Method 2 (Event Listener)</button>
+<button id="method3">Method 3 (Function Reference)</button>
+<p> <b>Lab :1 Q.N 10A.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+<script>
+    // Method 1: Inline event handling
+    document.getElementById('method1').onclick = function () {
+        alert('Method 1: Inline event handling');
+    };
+
+    // Method 2: Event listener
+    document.getElementById('method2').addEventListener('click', function () {
+        alert('Method 2: Event Listener');
+    });
+
+    // Method 3: Function reference
+    function method3Handler() {
+        alert('Method 3: Function Reference');
+    }
+
+    document.getElementById('method3').addEventListener('click', method3Handler);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 11G</title>
+</head>
+<body>
+    <!-- WAP to demonstrate input event handling -->
+
+    <label>Type Something...</label>
+    <input type="text" id="input">
+    <div id="output"></div>
+    <p> <b>Lab :1 Q.N 10F<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    <script>
+        var input =document.getElementById("input");
+        input.addEventListener("input", function (event){
+ var inputValue=event.target.value;
+ document.getElementById("output").textContent=inputValue;
+
+        });
+    </script>
+    
+</body>
+</html>

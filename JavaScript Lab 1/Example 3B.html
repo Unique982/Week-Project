@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3B</title>
+</head>
+<body>
+    <!--Create a web page to take a number from prompt dialog and display the sum of digits
+of that number in an alert box using while-loop. (if number is 1457 the result should
+be (1+4+5+7 ) = 12).  -->
+    <script>
+        var w=parseInt(window.prompt("Enter a Number"));
+        var x= w.toString().length;
+        var y=0;
+        for(var i=0;i<=x;i++){
+            var z=parseInt(w%10);
+            y=y+z;
+            w=w/10;
+        }
+        document.write("The sum:"+y);
+    </script>
+    <p> <b>Lab :1 Q.N 3 B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+    
+</body>
+</html>

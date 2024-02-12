@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Create two text fields to take two numbers and three buttons each labeled with 'add',
+'subtract' and 'multiply'. Write the scripts such that when a button is clicked
+corresponding result will be displayed on the alert dialog box. -->
+
+<label>Number 1:</label>
+<input type="text" id="num1" />
+
+<label>Number 2:</label>
+<input type="text" id="num2" />
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Subtract</button>
+<button onclick="multi()">Multiply</button>
+<p> <b>Lab :1 Q.N 10B.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+
+<script>
+    function add() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+            const result = num1 + num2;
+            alert(`Addition Result: ${result}`);
+        } else {
+            alert('Please enter valid numbers.');
+        }
+    }
+
+    function sub() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+            const result = num1 - num2;
+            alert(`Subtraction Result: ${result}`);
+        } else {
+            alert('Please enter valid numbers.');
+        }
+    }
+
+    function multi() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+            const result = num1 * num2;
+            alert(`Multiplication Result: ${result}`);
+        } else {
+            alert('Please enter valid numbers.');
+        }
+    }
+</script>
+
+</body>
+</html>

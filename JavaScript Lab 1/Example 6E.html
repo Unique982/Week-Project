@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 6E</title>
+</head>
+<body>
+  <!-- WAP having JS object with function, another object and array as values of it's
+properties. Program should contain statements to access those properties and display
+them -->
+    <script>
+        // Object with function, another object, and array as values of its properties
+        let Object = {
+  
+          functionName: function () {
+            document.write("This is a function inside the object!");
+          },
+          
+          object: {
+            key1: "1",
+            key2: "2",
+          },
+  
+          arrays: ["krish", "Gita", "Sita"],
+        };
+        document.write("Calling the function:");
+        Object.functionName();
+        document.write("<br>");
+        document.write("Accessing properties of anotherObject:");
+        document.write("Key 1:", Object.object.key1);
+        document.write("Key 2:", Object.object.key2);
+        document.write("<br>");
+        document.write("Accessing elements of arrayProperty:");
+        for(var i=0;i<3;i++){
+          document.write(Object.arrays[i]);
+          document.write("<br>");
+        }
+  
+        Object.arrayProperty.forEach((item, index) => {
+          console.log(`Item ${index + 1}: ${item}`);
+        });
+      </script>
+      <p> <b>Lab :1 Q.N 6E.<br>Name: Khemraj Neupane <br>Roll No: 19 Sec A</b></p>
+</body>
+</html>
